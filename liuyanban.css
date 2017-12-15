@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    outline: none;
+}
+body{
+    background-color: #F6F6F6;
+}
+.info{
+    width: 500px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding: 10px 20px
+    box-shadow: 0 0 5px 0 #36166a inset;
+    /*要问*/
+    border: 1px solid #CCC;
+}
+.formgroup{
+    width: 100%;
+    height: 30px;
+    margin: 6px 0;
+}
+.formgroup input{
+    width: 90%;
+    height: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #0A246A;
+    border: 1px solid #CCC;
+    box-shadow: 0 0 5px 0 #36166a inset;
+    margin: 0 auto;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    display: block;
+}
+.form{
+    width: 100%;
+    height: auto;
+    margin: 6px 0;
+}
+textarea{
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    font-size: 18px;
+    box-shadow: 0 0 5px 0 #36166a inset;
+    resize: none;
+    border-radius: 5px;
+    display: block;
+    color: #0A246A;
+    line-height: 20px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 1px solid #CCC;
+
+}
+.shuru{
+    width: 90%;
+    height: auto;
+    margin: 6px 0;
+    padding: 6px 12px;
+    text-align: center;
+}
+.shuru span{
+    color: #c67aff;
+}
+button{
+    width: 90%;
+    height: 30px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 5px;
+    color: #ddffff;
+    background-color: #8a52ff;
+    line-height: 10px;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+.content{
+    width: 500px;
+    height: auto;
+    box-shadow: 0 0 5px 0 #36166a inset;
+    border-radius: 5px;
+    padding: 6px 12px;
+    margin: 20px auto;
+}
+.content>ul{
+    width: 100%;
+    height: auto;
+    padding: 6px 12px;
+    box-sizing: border-box;
+}
+.content>ul>li{
+    width: 100%;
+    height: 100px;
+}
+.content li .bon{
+    height: 100%;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    flex: 1;
+}
