@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>留言板</title>
+    <link rel="stylesheet" href="liuyanban.css">
+</head>
+<body>
+    <section class="info">
+        <div class="formgroup">
+            <input type="text" class="top" autofocus="" placeholder="标题">
+        </div>
+        <div class="form">
+            <textarea maxlength="300" placeholder="内容"></textarea>
+        </div>
+        <p class="shuru">
+            您现在已经输入了<span class="numone">0</span>个字，还能输入<span class="numtop">200</span>个字
+        </p>
+        <button>提交</button>
+    </section>
+
+
+    <!--<section class="content">-->
+            <!--<ul>-->
+                <!--<li>-->
+
+                    <!--<div class="bon">-->
+                        <!--<h3></h3>-->
+                        <!--<p>快点评论吧</p>-->
+                    <!--</div>-->
+                <!--</li>-->
+
+            <!--</ul>-->
+    <!--</section>-->
+</body>
+</html>
+<script src="function.js"></script>
+<!--<script src="dianji.js"></script>-->
+<script>
+    window.onload = function () {
+        let text = document.getElementsByTagName('textarea')[0];
+        console.log(text);
+        let spans = document.querySelectorAll('span');
+        console.log(spans);
+        let button = document.getElementsByTagName('button')[0];
+        console.log(button);
+        let input = document.getElementsByTagName('input')[0];
+        console.log(input);
+        let ul = document.querySelectorAll('ul')[0];
+        console.log(ul);
+        let maxlength = 200;
+        text.addEventListener('keyup',function(){
+            //文本域的键盘抬起事件
+            let length = this.value.length;
+            /*获取文本内容的长度,value 表单默认的属性*/
+            spans[0].innerText = length;
+            spans[1].innerText = maxlength-length;
+        });
+//        button.('click',function(){
+//            let textV = text.value;
+//            let inputy = input.value;
+////            保存文本跟标题的内容
+//            spans[0]=0;
+//            spans[1]=maxlength;
+//            text.value = '';
+//            input.value = '';
+//        })
+    }
+</script>
